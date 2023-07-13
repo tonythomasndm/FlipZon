@@ -6,10 +6,10 @@ interface Ecommerce_company
     static void display_menu()throws IOException{}
 }
 public class FlipZon implements Ecommerce_company {
-    static ArrayList<Admin> admin_list = new ArrayList<Admin>();
+    static private ArrayList<Admin> admin_list = new ArrayList<Admin>();
     static ArrayList<giveaway_deals> giveaway_deals_list = new ArrayList<>();
     static ArrayList<Category> categories_list= new ArrayList<Category>();
-    static ArrayList <Customer> registered_Customer = new ArrayList<Customer>();
+    static private ArrayList <Customer> registered_Customer = new ArrayList<Customer>();
     public static void main(String args[])throws IOException
     {   
         FlipZon.admin_list.add(new Admin("Beff Jezos", "********"));
